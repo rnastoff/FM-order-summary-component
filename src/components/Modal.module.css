@@ -1,0 +1,159 @@
+img {
+  width: 100%;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-top: 3rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  line-height: 1.6rem;
+  text-align: center;
+  width: 75%;
+}
+
+/* MODAL PLAN */
+.plan {
+  background: hsl(225, 100%, 98%);
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+  padding: 1.5rem;
+  width: 78%;
+}
+
+.plan__left {
+  display: flex;
+}
+
+.plan img {
+  vertical-align: middle;
+  height: 3rem;
+  width: 3rem;
+}
+
+.plan__left__text {
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+  width: 100%;
+}
+
+.plan__left__text__title {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.plan__left__text__price {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-top: 0.4rem;
+}
+
+.plan__right {
+  padding: 0.8rem 0;
+}
+
+.plan__right a {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.plan__right a:active {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+/* BUTTONS */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.plan__proceedBTN {
+  background: hsl(245, 75%, 52%);
+  border-radius: 0.8rem;
+  box-shadow: 0px 10px 25px rgba(56, 42, 225, 0.3);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  width: 71%;
+}
+
+.plan__proceedBTN:active {
+  background: #766cf1;
+  transform: scale(0.98);
+}
+
+.plan__cancelBTN {
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  width: 71%;
+}
+
+.plan__cancelBTN:active {
+  color: hsl(223, 47%, 23%);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .plan {
+    padding: 1rem;
+    width: 85%;
+  }
+
+  .plan__left {
+    width: 100%;
+  }
+
+  .plan__left__text {
+    width: 100%;
+  }
+
+  .plan__left__text__title {
+    font-size: 0.9rem;
+  }
+
+  .plan__left__text__price {
+    font-size: 0.9rem;
+  }
+
+  .plan__right a {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .plan__proceedBTN {
+    margin-top: 1.6rem;
+    width: 75%;
+  }
+
+  .plan__cancelBTN {
+    margin-top: 0.6rem;
+  }
+}
